@@ -5,10 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gallery</title>
 </head>
+<style>
+    body {
+      background: linear-gradient(135deg, #4A90E2, #67C5E7);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+    }
+    marquee {
+        background-color: #ffffff;
+        padding: 10px;
+        border-radius: 30px;
+        margin-bottom: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h2{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    div{
+      background-color: white;
+      padding: 15px 20px;
+      border-radius: 30px;
+      margin-bottom: 20px;
+    }
+</style>
 <body>
-    
-    <h2>TOOLS I USE</h2>
-    <marquee behavior="" direction="left">
+    <div>
+      <h2>TOOLS I USE</h2>
+    </div>
+    <marquee behavior="alternate" direction="left">
         <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="80" height="80" style="margin-right: 20px;" />
           </a>
@@ -49,7 +77,5 @@
             <img src="https://cdn.worldvectorlogo.com/logos/codeigniter.svg" alt="codeigniter" width="80" height="80" style="margin-right: 20px;" />
           </a>
     </marquee>
-
-    
 </body>
 </html>

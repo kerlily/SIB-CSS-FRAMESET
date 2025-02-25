@@ -3,15 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>navigation</title>
+    <title>Navigation</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #4A90E2, #67C5E7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .navbar {
+            background: white;
+            padding: 15px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            transition: 0.3s ease-in-out;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .nav-links a:hover {
+            background: #89CFF0;
+            color: white;
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
-    <table style="margin: 0 auto; padding: 10px;" cellpadding="10px">
-        <tr>
-            <td><h1><a href="home.html" target="main"> Home</a></h1></td>
-            <td><h1><a href="study.html" target="main"> My Study</a></h1></td>
-            <td><h1><a href="gallery.html" target="main"> Gallery</a></h1></td>
-        </tr>
-    </table>
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="home.html" target="main">Home</a>
+            <a href="study.html" target="main">My Study</a>
+            <a href="gallery.html" target="main">Gallery</a>
+        </div>
+    </div>
 </body>
 </html>
